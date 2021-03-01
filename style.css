@@ -1,0 +1,792 @@
+* {
+    margin: 0;
+    /* background-color:black; */
+
+  }
+
+/* styling for link in box */ 
+
+  a:visited {
+    color:white;
+  }
+
+
+/* style for the creation box */
+
+body{
+    height:max-content;
+    width:max-content;
+    background-color:black;
+
+}
+
+p{
+    color:white;
+    font-family: 'Space Mono', monospace;
+    font-size: 1vw;
+    line-height: 2.5vh;
+    /* max-width: 20vw; */
+}
+
+div.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main { 
+    width: 30vw;
+    height: 65vh;
+    display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+    flex-direction: column;
+    outline: solid white .25em;
+    
+}
+header{
+    width: 30vw;
+    height: 8.5vh;
+    outline: solid white .25em;
+    text-align: center;
+    padding-top:1vh;
+
+}
+
+article{
+    width: 30vw;
+    height: 51.5vh;
+}
+
+footer{
+    width: 30vw;
+    height: 5vh;
+    outline: solid white .25em;
+    text-align: center;
+    padding-top: 1vh;
+}
+
+
+/* draggable images */
+
+/* img{
+    resize: both;
+    overflow: auto; 
+} */
+
+#drag{
+	position:absolute;
+	display:flex;
+	justify-content: flex-start;
+    align-items: flex-start;
+    /* resize: both;
+    overflow: auto;  */
+
+}
+
+.beanie{
+    position:absolute;
+    width:20vw;
+    /* height:20vw; */
+    height:auto;
+    cursor: move;
+    left: 10vw;
+    top: 10vh;
+    z-index: 10;
+    /* resize: both;
+    overflow: auto;   */
+}
+    .beanie > img{
+        width:70%;
+        height:auto;
+        /* object-fit: contain; */
+        /* object-fit: cover; */
+        /* resize: both;
+        overflow: auto; */
+    }
+
+.challah{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 15vw;
+    top: 60vh;
+}
+    .challah > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.frog{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 25vw;
+    top: 110vh;
+}
+    .frog > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.havdallah{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 75vw;
+    top: 20vh;
+}
+    .havdallah > img{
+        width: 35%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.denimJacket{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 85vw;
+    top: 85vh;
+}
+    .denimJacket > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+
+.carabiner{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 105vw;
+    top: 55vh;
+}
+    .carabiner > img{
+        width:40%;
+        height:auto;
+        object-fit: contain;
+    }
+
+
+.docMartens{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 4vw;
+    top: 90vh;
+}
+    .docMartens > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+
+.dreidel{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 55vw;
+    top: 120vh;
+}
+    .dreidel > img{
+        width:50%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.drill{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 30vw;
+    top: 150vh;
+}
+    .drill > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.golem1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 130vw;
+    top: 20vh;
+}
+    .golem1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.havadallah1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 130vw;
+    top: 130vh;
+    z-index: 10;
+}
+    .havadallah1 > img{
+        width:45%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.havdalah4{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 15vw;
+    top: 200vh;
+}
+    .havdalah4 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.havdalah5{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 200vw;
+    top: 10vh;
+}
+    .havdalah5 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.kiddushCup1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 150vw;
+    top: 70vh;
+}
+    .kiddushCup1 > img{
+        width: 60%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.matzoh1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 85vw;
+    top: 190vh;
+}
+    .matzoh1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+
+.matzoh2{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 180vw;
+    top: 100vh;
+}
+    .matzoh2 > img{
+        width:40%;
+        height:auto;
+        object-fit: contain;
+    }
+
+
+.matzoh3{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 100vw;
+    top: 130vh;
+}
+    .matzoh3 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+
+.sedar3{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 150vw;
+    top: 30vh;
+}
+    .sedar3 > img{
+        width:50%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.shabbatCandles1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 2vw;
+    top: 250vh;
+}
+    .shabbatCandles1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.shofar1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 160vw;
+    top: 225vh;
+}
+    .shofar1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.flag1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 120vw;
+    top: 90vh;
+}
+    .flag1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.crystal1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 55vw;
+    top: 160vh;
+}
+    .crystal1 > img{
+        width:15%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.crystals2{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 190vw;
+    top: 60vh;
+}
+    .crystals2 > img{
+        width:30%;
+        height:auto;
+        object-fit: contain;
+    }
+    
+.crystals3{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 120vw;
+    top: 200vh;
+}
+    .crystals3 > img{
+        width:30%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.tarot1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 2vw;
+    top: 140vh;
+}
+    .tarot1 > img{
+        width:45%;
+        height:auto;
+        object-fit: contain;
+    }
+    
+.tarot2{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 95vw;
+    top: 10vh;
+}
+    .tarot2 > img{
+        width:45%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.tarot3{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 60vw;
+    top: 200vh;
+}
+    .tarot3 > img{
+        width:45%;
+        height:auto;
+        object-fit: contain;
+    }
+    
+.coffee1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 180vw;
+    top: 150vh;
+}
+    .coffee1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.etrog{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 195vw;
+    top: 200vh;
+}
+    .etrog > img{
+        width:50%;
+        height:auto;
+        object-fit: contain;
+    }
+    
+.plant1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 180vw;
+    top: 15vh;
+}
+    .plant1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.antidepressant{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 145vw;
+    top: 190vh;
+}
+    .antidepressant > img{
+        width:40%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.chart{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 190vw;
+    top: 130vh;
+}
+    .chart > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.chocker{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 170vw;
+    top: 45vh;
+}
+    .chocker > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.clippers{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 30vw;
+    top: 230vh;
+}
+    .clippers > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.hormone1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 80vw;
+    top: 140vh;
+}
+    .hormone1 > img{
+        width:30%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.hormone2{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 190vw;
+    top: 250vh;
+}
+    .hormone2 > img{
+        width:30%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.sefirot{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 100vw;
+    top: 230vh;
+}
+    .sefirot > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.strap1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 130vw;
+    top: 235vh;
+}
+    .strap1 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.turtleNeck{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 65vw;
+    top: 250vh;
+}
+    .turtleNeck > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.ahavah{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 160vw;
+    top: 5vh;
+}
+    .ahavah > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.branch{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 200vw;
+    top: 45vh;
+}
+    .branch > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.chai{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 40vw;
+    top: 200vh;
+}
+    .chai > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.cohen1{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 60vw;
+    top: 90vh;
+}
+    .cohen1 > img{
+        width:90%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.cohen2{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 165vw;
+    top: 255vh;
+}
+    .cohen2 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.cohen3{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 200vw;
+    top: 90vh;
+}
+    .cohen3 > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.hamsa{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 155vw;
+    top: 160vh;
+}
+    .hamsa > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.starDavid{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 3vw;
+    top: 35vh;
+}
+    .starDavid > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.vibe{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 110vw;
+    top: 160vh;
+}
+    .vibe > img{
+        width:70%;
+        height:auto;
+        object-fit: contain;
+    }
+
+.plant2{
+    position:absolute;
+	width:20vw;
+	height:20vh;
+    cursor: move;
+    left: 150vw;
+    top: 100vh;
+}
+    .plant2 > img{
+        width:60%;
+        height:auto;
+        object-fit: contain;
+    }
